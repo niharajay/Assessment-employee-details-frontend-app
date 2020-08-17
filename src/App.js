@@ -1,10 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './Login';
+import Login from './Login';
+import './Login.css'
+import Routes from './Routes'
+//import { Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router } from 'react-router-dom';
+import EmployeeDetails from './EmployeeDetails';
 
 function App() {
   return (
-    <div className="App">
+    /*<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,6 +26,13 @@ function App() {
           Learn React
         </a>
       </header>
+    </div>*/
+    
+    <div>
+      <Router>
+				<Routes />
+			</Router>
+      <Login></Login>
     </div>
   );
 }
